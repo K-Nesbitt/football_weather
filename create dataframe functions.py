@@ -90,10 +90,29 @@ ax.set_xlabel('Temperature in Farenheit', color='black')
 ax.set_ylabel('Number of Games', color='black')
 ax.hist(game_win_df['Weather_Temp'])
 plt.savefig('images/temp_hist')
+
+#%%
+game_win_df['Date'][4]
+#%%
+def team_scores(df, team_name):
+    new_df = pd.DataFrame()
+    for i in range(len(df)):
+        new_df.at[i,'Date'] = df['Date'][i]
+        new_df.at[i,'Score'] = df['Away_Team_Score'][i] if df['Away_Team'][i] == team_name else df['Home_Team_Score'][i]
+        new_df.at[i, 'Weather_Temp'] = df['Weather_Temp'][i]
+    return new_df
+t_score = team_scores(game_win_df, 'Denver Broncos')
+#%%
+t_score.info()
+pd.to_numeric(t_score['Score'], 'coerce')
 #%%
 fig, ax = plt.subplots(figsize=(8,4))
 ax.set_title('Temperature by Score')
 ax.set_xlabel('Temperature')
 ax.set_ylabel('Number of Points')
-ax.plot(x = temp, y = score)
+ax.plot(x = t_score['Weather_Temp'], y = pd.to_numeric(t_score['Score'], 'coerce'))
 
+
+
+
+#%%
