@@ -14,9 +14,9 @@ Here are some histograms of the data:
 ![hist2](https://github.com/K-Nesbitt/football_weather/blob/master/images/temp_win_loss.png)
 
 ## Statistical Test Elements:
-1. H_0: The winning rate is 0.54, no matter the temperature
-2. H_A: The winning rate will increase or decrease, DEPENDING on the temperature
-3. The statistical test I will use is a Bonferroni Test. A Bonferroni is a T-test that specifies that we have n samples and thus alpha is divided by the n.
+1. Null Hypothesis: The sample means (winning rate) are identical
+2. Alternative Hypothesis: The sample means will vary more than an identified significance level
+3. The statistical test I will use is a Bonferroni Test. A Bonferroni is a T-test that compares n samples.
 4. Since there are two samples that I am comparing, alpha  = 0.05/2 = 0.025.
 
 ## Results
@@ -30,7 +30,7 @@ By the histograms from above I hypothesized that there would be a some differenc
 
       The statistic value is -0.601 and the pvalue is 0.549
       
-    
+Therefore I have failed to reject the Null Hypothesis since my p-value is not less than my significance level. 
 
 
 
