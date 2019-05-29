@@ -7,10 +7,15 @@ I found the data of all games from 2009 to 2018 on the website: http://www.nflwe
 The total games in my data set were 210. 
 The average temperature of the games was 62 degrees Farenheit.
 The winning rate was 0.54 (113/210).
-Here is a histogram of the temperature over all the games:
+Here are some histograms of the data:
 
-![hist](https://github.com/K-Nesbitt/football_weather/blob/master/images/temp_hist.png)
+![hist1](https://github.com/K-Nesbitt/football_weather/blob/master/images/temp_hist.png)
 
+
+![hist2](https://github.com/K-Nesbitt/football_weather/blob/master/images/above_temp.png)
+
+
+![hist3](https://github.com/K-Nesbitt/football_weather/blob/master/images/below_temp.png)
 
 ## Statistical Test Elements:
 1. H_0: The winning rate is 0.54, no matter the temperature
