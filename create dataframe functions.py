@@ -83,77 +83,67 @@ def calculate_averages(df):
 
 calculate_averages(game_win_df)
 #%%
-#Plot histogram of temperature values and save the image
-temp_avg = round(game_win_df['Weather_Temp'].mean(skipna=True), 2)
-below = game_win_df[game_win_df['Weather_Temp'] < temp_avg]
-above = game_win_df[game_win_df['Weather_Temp'] > temp_avg]
+#This function willpPlot histogram of temperature values 
+# when you pass in a dataframe and save the image as the specified title
+def temp_hist_plot(df, title):
+    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
+    below = df[df['Weather_Temp'] < temp_avg]
+    above = df[df['Weather_Temp'] > temp_avg]
 
-fig, axs = plt.subplots(3,1, figsize=(8,8))
+    fig, axs = plt.subplots(3,1, figsize=(8,8))
 
-ax0 = axs[0]
-ax0.set_title('Histogram of Temperatures')
-ax0.set_xlabel('Temperature in Farenheit')
-ax0.set_ylabel('Number of Games')
-ax0.hist(game_win_df['Weather_Temp'])
-
-
-ax1 = axs[1]
-ax1.set_title('Histogram of Below Average Temperatures')
-ax1.set_xlabel('Temperature in Farenheit')
-ax1.set_ylabel('Number of Games')
-ax1.hist(below['Weather_Temp'], bins=20)
+    ax0 = axs[0]
+    ax0.set_title('Histogram of Temperatures')
+    ax0.set_xlabel('Temperature in Farenheit')
+    ax0.set_ylabel('Number of Games')
+    ax0.hist(df['Weather_Temp'])
 
 
-ax2 = axs[2]
-ax2.set_title('Histogram of Above Average Temperatures')
-ax2.set_xlabel('Temperature in Farenheit')
-ax2.set_ylabel('Number of Games')
-ax2.hist(above['Weather_Temp'], bins=20)
+    ax1 = axs[1]
+    ax1.set_title('Histogram of Below Average Temperatures')
+    ax1.set_xlabel('Temperature in Farenheit')
+    ax1.set_ylabel('Number of Games')
+    ax1.hist(below['Weather_Temp'], bins=20)
 
-plt.tight_layout()
-plt.savefig('images/temp_hist',facecolor = 'white' )
+
+    ax2 = axs[2]
+    ax2.set_title('Histogram of Above Average Temperatures')
+    ax2.set_xlabel('Temperature in Farenheit')
+    ax2.set_ylabel('Number of Games')
+    ax2.hist(above['Weather_Temp'], bins=20)
+
+    plt.tight_layout()
+    plt.savefig('images/{}'.format(title),facecolor = 'white' )
+    return fig, axs
+
+temp_hist_plot(game_win_df, 'temp_hist')
+
+#%%
+#This plots the temperature of the winning games
+wins_only = game_win_df[game_win_df['Win']==1]
+temp_hist_plot(wins_only, 'temp_wins_hist')
 
 
 #%%
 #This will create a dataframe where the temperature 
-# is less than the average
-def less_than(df):
+# is less than or greater than  the average
+def l_or_g(df, calculation):
     temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
     wins_only = df[df['Win']==1]
-    less = wins_only[wins_only['Weather_Temp']< temp_avg]
-    return less
+    if calculation == 'less':
+        return wins_only[wins_only['Weather_Temp']< temp_avg]
+        
+    else:
+        return wins_only[wins_only['Weather_Temp'] > temp_avg]
+        
 
-below_temp = less_than(game_win_df)
+less = l_or_g(game_win_df, 'less')
 
-#%%
-#This is a histogram of the below average temperature games that Broncos won
-fig, ax = plt.subplots(figsize=(8,4))
-ax.set_title('Histogram of Below Average Temperatures')
-ax.set_xlabel('Temperature in Farenheit')
-ax.set_ylabel('Number of Games')
-ax.hist(below_temp['Weather_Temp'])
-plt.savefig('images/below_temp_wins',facecolor = 'white' )
-#%%
-#This will create a dataframe where the temperature is 
-#greater than the average
-def greater_than(df):
-    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
-    wins_only = df[df['Win']==1]
-    greater = wins_only[wins_only['Weather_Temp'] > temp_avg]
-    return greater
+greater = l_or_g(game_win_df, 'greater')
 
-above_temp = greater_than(game_win_df)
-
-#%%
-#This is a histogram of the above average temperature games that Broncos won
-fig, ax = plt.subplots(figsize=(8,4))
-ax.set_title('Histogram of Above Average Temperatures')
-ax.set_xlabel('Temperature in Farenheit')
-ax.set_ylabel('Number of Games')
-ax.hist(above_temp['Weather_Temp'])
-plt.savefig('images/above_temp_wins',facecolor = 'white' )
 #%%
 #This will create a random selection from each dataframe and 
+
 #%%
 #This function will create a new dataframe with the Date, Score (for just the desired team),
 # and the temperature of the game. This dataframe may be useful to see if weather affects
