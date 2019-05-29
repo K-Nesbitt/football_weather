@@ -76,24 +76,23 @@ game_win_df = win_column(game_df, 'Denver Broncos')
 #This function will calculate average temp and the number of wins
 def calculate_averages(df):
     temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
-    num_wins = df['Win'].sum()
+    num_wins_rate = round((df['Win'].sum()/ len(df)), 2)
     print('The average temperature of games from 2009 - 2018 is: ' + str(temp_avg)+ 'degrees Farenheit\n'
-    'The average number of wins from 2009 - 2018 is: ' + str(num_wins) + '\n')
-    return temp_avg, num_wins
+    'The average number of wins from 2009 - 2018 is: ' + str(num_wins_rate) + '\n')
+    return temp_avg, num_wins_rate
 
 calculate_averages(game_win_df)
 #%%
 #Plot histogram of temperature values and save the image
 fig, ax = plt.subplots(figsize=(8,4))
-
-ax.set_title('Histogram of Temperatures', color='black')
-ax.set_xlabel('Temperature in Farenheit', color='black')
-ax.set_ylabel('Number of Games', color='black')
+ax.set_title('Histogram of Temperatures')
+ax.set_xlabel('Temperature in Farenheit')
+ax.set_ylabel('Number of Games')
 ax.hist(game_win_df['Weather_Temp'])
-plt.savefig('images/temp_hist')
+plt.savefig('images/temp_hist',facecolor = 'white' )
 
 #%%
-#This function will create a new datafram with the Date, Score (for just the desired team),
+#This function will create a new dataframe with the Date, Score (for just the desired team),
 # and the temperature of the game. This dataframe may be useful to see if weather affects
 #the average score of the game.
 def team_scores(df, team_name):
