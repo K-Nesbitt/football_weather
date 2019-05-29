@@ -83,9 +83,9 @@ def calculate_averages(df):
 
 calculate_averages(game_win_df)
 #%%
-#This function willpPlot histogram of temperature values 
+#This function will plot a histogram of temperature values 
 # when you pass in a dataframe and save the image as the specified title
-def temp_hist_plot(df, title):
+def temp_hist_plot(df, filename):
     temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
     below = df[df['Weather_Temp'] < temp_avg]
     above = df[df['Weather_Temp'] > temp_avg]
@@ -113,36 +113,71 @@ def temp_hist_plot(df, title):
     ax2.hist(above['Weather_Temp'], bins=20)
 
     plt.tight_layout()
-    plt.savefig('images/{}'.format(title),facecolor = 'white' )
+    plt.savefig('images/{}'.format(filename),facecolor = 'white' )
     return fig, axs
 
 temp_hist_plot(game_win_df, 'temp_hist')
 
 #%%
-#This plots the temperature of the winning games
-wins_only = game_win_df[game_win_df['Win']==1]
-temp_hist_plot(wins_only, 'temp_wins_hist')
+#This function will plot two histograms of the temperature
+#for games won and games lost. 
+def hist_win_loss(df, filename):
+    win = df[df['Win']==1]
+    lost = df[df['Win']!=1]
+    
+    fig, axs = plt.subplots(1,2, figsize = (8,8))
+
+    ax0 = axs[0]
+    ax0.set_title('Temperature by Games Won')
+    ax0.set_xlabel('Temperature')
+    ax0.set_ylabel('Number of Games')
+    ax0.hist(win['Weather_Temp'])
+
+    ax1 = axs[1]
+    ax1.set_title('Temperature by Games Lost')
+    ax1.set_xlabel('Temperature')
+    ax1.set_ylabel('Number of Games')
+    ax1.hist(lost['Weather_Temp'])
+
+    plt.tight_layout()
+    plt.savefig('images/{}'.format(filename), facecolor = 'white')
+    return fig, axs
+    
+
+hist_win_loss(game_win_df, 'temp_win_loss')
 
 
 #%%
 #This will create a dataframe where the temperature 
-# is less than or greater than  the average
+# is less than or greater than the average
 def l_or_g(df, calculation):
-    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
-    wins_only = df[df['Win']==1]
+    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 0)
     if calculation == 'less':
-        return wins_only[wins_only['Weather_Temp']< temp_avg]
+        return df[df['Weather_Temp']< temp_avg]
         
     else:
-        return wins_only[wins_only['Weather_Temp'] > temp_avg]
+        return df[df['Weather_Temp'] > temp_avg]
         
 
 less = l_or_g(game_win_df, 'less')
-
+sample_l = less.sample(n=50)
 greater = l_or_g(game_win_df, 'greater')
+sample_g = greater.sample(n=50)
 
 #%%
-#This will create a random selection from each dataframe and 
+
+
+#%%
+
+
+#%%
+from scipy import stats
+#Run two tailed T-test on two independent samples. 
+# Null hypothesis is that the sample means are identical. 
+
+stat, pval = stats.ttest_ind(sample_l['Win'], sample_g['Win'])
+print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
+
 
 #%%
 #This function will create a new dataframe with the Date, Score (for just the desired team),
@@ -157,5 +192,4 @@ def team_scores(df, team_name):
     return new_df
 t_score = team_scores(game_win_df, 'Denver Broncos')
 
-#%%
 
