@@ -125,7 +125,7 @@ def hist_win_loss(df, filename):
     win = df[df['Win']==1]
     lost = df[df['Win']!=1]
     
-    fig, axs = plt.subplots(1,2, figsize = (8,8))
+    fig, axs = plt.subplots(1,2, sharey=True, figsize = (8,8))
 
     ax0 = axs[0]
     ax0.set_title('Temperature by Games Won')
@@ -136,7 +136,6 @@ def hist_win_loss(df, filename):
     ax1 = axs[1]
     ax1.set_title('Temperature by Games Lost')
     ax1.set_xlabel('Temperature')
-    ax1.set_ylabel('Number of Games')
     ax1.hist(lost['Weather_Temp'])
 
     plt.tight_layout()
@@ -159,23 +158,19 @@ def l_or_g(df, calculation):
         return df[df['Weather_Temp'] > temp_avg]
         
 
+#Create samples from dataframes to run stat test on
 less = l_or_g(game_win_df, 'less')
 sample_l = less.sample(n=50)
+
 greater = l_or_g(game_win_df, 'greater')
 sample_g = greater.sample(n=50)
 
 #%%
-
-
-#%%
-
-
-#%%
 from scipy import stats
+
 #Run two tailed T-test on two independent samples. 
 # Null hypothesis is that the sample means are identical. 
-
-stat, pval = stats.ttest_ind(sample_l['Win'], sample_g['Win'])
+stat, pval = stats.ttest_ind(sample_l['Win'], sample_g['Win'], equal_var=False)
 print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
 
 
