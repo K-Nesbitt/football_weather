@@ -17,3 +17,7 @@ Here are some histograms of the data:
 3. The statistical test I will use is a Bonferroni Test
 4. Since this is a two tailed test (checking for lower or higher temperatures) I will have an alpha level at 0.025.
 
+First let us look at the data visually. These histograms were made from the temperature of winning games.
+
+![hist2](https://github.com/K-Nesbitt/football_weather/blob/master/images/temp_wins_hist.png)
+
