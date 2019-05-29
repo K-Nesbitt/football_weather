@@ -81,7 +81,7 @@ def calculate_averages(df):
     'The average number of wins from 2009 - 2018 is: ' + str(num_wins_rate) + '\n')
     return temp_avg, num_wins_rate
 
-calculate_averages(game_win_df)
+avg = calculate_averages(game_win_df)
 #%%
 #Plot histogram of temperature values and save the image
 fig, ax = plt.subplots(figsize=(8,4))
@@ -91,6 +91,51 @@ ax.set_ylabel('Number of Games')
 ax.hist(game_win_df['Weather_Temp'])
 plt.savefig('images/temp_hist',facecolor = 'white' )
 
+
+#%%
+wins_only = game_win_df[game_win_df['Win']==1]
+less = wins_only[wins_only['Weather_Temp']< avg[0]]
+less.tail()
+#%%
+#This will create a dataframe where the temperature 
+# is less than the average
+def less_than(df):
+    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
+    wins_only = df[df['Win']==1]
+    less = wins_only[wins_only['Weather_Temp']< temp_avg]
+    return less
+
+below_temp = less_than(game_win_df)
+
+#%%
+#This is a histogram of the below average temperature games
+fig, ax = plt.subplots(figsize=(8,4))
+ax.set_title('Histogram of Below Average Temperatures')
+ax.set_xlabel('Temperature in Farenheit')
+ax.set_ylabel('Number of Games')
+ax.hist(below_temp['Weather_Temp'])
+plt.savefig('images/below_temp',facecolor = 'white' )
+#%%
+#This will create a dataframe where the temperature is 
+#greater than the average
+def greater_than(df):
+    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
+    wins_only = df[df['Win']==1]
+    greater = wins_only[wins_only['Weather_Temp'] > temp_avg]
+    return greater
+
+above_temp = greater_than(game_win_df)
+
+#%%
+#This is a histogram of the above average temperature games
+fig, ax = plt.subplots(figsize=(8,4))
+ax.set_title('Histogram of Above Average Temperatures')
+ax.set_xlabel('Temperature in Farenheit')
+ax.set_ylabel('Number of Games')
+ax.hist(above_temp['Weather_Temp'])
+plt.savefig('images/above_temp',facecolor = 'white' )
+#%%
+#This will create a random selection from each dataframe and 
 #%%
 #This function will create a new dataframe with the Date, Score (for just the desired team),
 # and the temperature of the game. This dataframe may be useful to see if weather affects
@@ -106,7 +151,3 @@ t_score = team_scores(game_win_df, 'Denver Broncos')
 
 #%%
 
-
-
-
-#%%
