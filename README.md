@@ -44,8 +44,17 @@ Out of curiosity and further wanting to check my hypothesis, I decided to run an
 
 This result continued to disprove my alternative hypothesis, and revealed that the means of the two samples are closer together. 
 
-## Reflection
+The second hypothesis that I wanted to test was if there was a significant difference in the scores for low or high temperatures. To run this test I had to create a dataframe that had the date, score (specifically Denver), and the temperature. I then split this into two samples of high and low temperature and tested their score using a T-Test. 
 
+     The statistic value is 0.489 and the pvalue is 0.626
+ 
+ So I am still unable to reject the Null Hypothesis. The average score for all games is 23.44 points, for games that are      below 62 degrees the average score is 22.04 points, and games that are above 62 degrees the average score is 24.78 points. 
+ 
+ I will need to collect more data or change my sample population to determine if I can reject the Null Hypothesis.
+
+## Reflection
+Follow up: separate data into a low temp range, mid/avg range, and high range. Then run test on low and high range. 
+Or consider weather type column
 
 ## References
 1. NFLWeather.com, http://www.nflweather.com/en/
