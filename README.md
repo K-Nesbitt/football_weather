@@ -13,6 +13,8 @@ Here are some histograms of the data:
 
 ![hist2](https://github.com/K-Nesbitt/football_weather/blob/master/images/temp_win_loss.png)
 
+You can see in the above graph that there is a spike in the number of games in the range from about 70-75. There were exactly 32 games where the temperature was between 70 and 75 degrees Farenheit. I looked into these games specifically to see if there were any other trends (dates, home vs away games, etc) but none were found. Here is a print out of the [data:](https://github.com/K-Nesbitt/football_weather/blob/master/data/Screen%20Shot%202019-05-30%20at%201.16.54%20PM.png)
+
 ## Statistical Test Elements:
 1. Null Hypothesis: The sample means (winning rate) are identical
 2. Alternative Hypothesis: The sample means will vary more than an identified significance level
@@ -22,9 +24,7 @@ Here are some histograms of the data:
 ## Results
 I ran a T-test on two samples of data; games that were below average temperature, and games that were above average temperature. 
 
-      stat, pval = stats.ttest_ind(sample_l['Win'], sample_g['Win'], equal_var=False)
-      
-    
+      stat, pval = stats.ttest_ind(sample_l['Win'], sample_g['Win'], equal_var=False)  
 
 By the histograms from above I hypothesized that there would be a some difference. However, my T-test yielded these results:
 
@@ -32,10 +32,12 @@ By the histograms from above I hypothesized that there would be a some differenc
       
 Therefore I have failed to reject the Null Hypothesis since my p-value is not less than my significance level. 
 
-Out of curiosity and further wanting to check my hypothesis I decided to run another T-test on two different samples. This time I created a sample of games won and of games lost. I then ran the T-Test against the weather of theses two samples. 
+Out of curiosity and further wanting to check my hypothesis, I decided to run another T-test on two different samples. This time I created a sample of games won and of games lost. I then ran the T-Test against the weather of theses two samples. 
 
        The statistic value is -0.386 and the pvalue is 0.7
 
-This result continued to disprove my alternative hypothesis. 
+This result continued to disprove my alternative hypothesis, and revealed that the means of the two samples are closer together. 
+
+## Reflection
 
 
