@@ -237,4 +237,26 @@ temp_high_score['Score'].mean()
 t_score['Score'] = pd.to_numeric(t_score['Score'])
 t_score['Score'].mean()
 
+
+#%%
+type(samp_g_score['Score'][0])
+#%%
+stat, pval = stats.ttest_ind(samp_g_score['Score'],samp_l_score['Score'], equal_var=False)
+print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
+
+
+#%%
+type(temp_low_score['Weather_Temp'])
+
+#%%
+ax = plt.subplot()
+ax.plot(temp_low_score['Weather_Temp'], temp_low_score['Score'], 'ro')
+ax.set_title('Temperature vs. Score')
+ax.set_xlabel('Temperature of Game')
+ax.set_ylabel('Game Score')
+ax.plot(temp_low_score['Weather_Temp'], temp_low_score['Score'], 'bo')
+ax.plot(temp_high_score['Weather_Temp'], temp_high_score['Score'], 'ro')
+ax.axhline(t_score['Score'].mean(), color='yellow',  linewidth=4)
+ax.annotate('Average Score', xy=(90,24))
+plt.savefig('images/temp_vs_score', facecolor = 'white')
 #%%
