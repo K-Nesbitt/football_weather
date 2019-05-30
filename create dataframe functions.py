@@ -131,12 +131,12 @@ def hist_win_loss(df, filename):
     ax0.set_title('Temperature by Games Won')
     ax0.set_xlabel('Temperature')
     ax0.set_ylabel('Number of Games')
-    ax0.hist(win['Weather_Temp'])
+    ax0.hist(win['Weather_Temp'], bins=20)
 
     ax1 = axs[1]
     ax1.set_title('Temperature by Games Lost')
     ax1.set_xlabel('Temperature')
-    ax1.hist(lost['Weather_Temp'])
+    ax1.hist(lost['Weather_Temp'], bins=20)
 
     plt.tight_layout()
     plt.savefig('images/{}'.format(filename), facecolor = 'white')
@@ -173,6 +173,33 @@ from scipy import stats
 stat, pval = stats.ttest_ind(sample_l['Win'], sample_g['Win'], equal_var=False)
 print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
 
+#%%
+sample_win = game_win_df[game_win_df['Win']==1].sample(n=50)
+sample_lost = game_win_df[game_win_df['Win']!=1].sample(n=50)
+
+stat, pval = stats.ttest_ind(sample_win['Weather_Temp'], sample_lost['Weather_Temp'], equal_var=False, nan_policy='omit')
+print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
+
+#%%
+#Plot the norm distribution of the temp for each sample.
+#mu = pop_mean = 62
+#std is unknown so I will use ste
+
+'''mu_H0 = 62
+std_H0 = np.std(game_win_df['Weather_Temp'], ddof=1)
+ste_l = np.std(sample_l['Weather_Temp'], ddof=1)/ np.sqrt(len(sample_l))
+ste_g = np.std(sample_g['Weather_Temp'], ddof=1)/ np.sqrt(len(sample_g))
+x_vals = np.linspace(mu - 3*ste, mu+3*ste)
+
+fig, ax = plt.subplots(figsize=(13,10))
+ax.set_title('PDF of Temperature Samples')'''
+
+print('mean of sample l is '+ str(sample_l['Weather_Temp'].mean()))
+print('mean of sample g is '+ str(sample_g['Weather_Temp'].mean()))
+
+
+
+#%%
 
 #%%
 #This function will create a new dataframe with the Date, Score (for just the desired team),
