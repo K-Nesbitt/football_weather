@@ -4,24 +4,9 @@ import requests
 import pandas as pd 
 import numpy as np 
 from scipy import stats
-import matplotlib.pyplot as plt 
-%matplotlib inline
+import matplotlib.pyplot as plt
 
 plt.style.use('seaborn-darkgrid')
-
-#%%
-#This will get the HTML code from the website 
-# and save it as a file 'broncos.html'
-data = requests.get('http://www.nflweather.com/en/searches/100250')
-
-with open('/Users/keatra/Galvanize/football_weather/data/broncos.html', 'w') as file:
-    file.write(data.text)
-
-#%%
-# This will create a BeautifulSoup object of our HTML code so we 
-# can run the web scrap program.
-soup = BeautifulSoup(data.text)
-
 
 #%%
 # This is my actual web scraping code. The function takes the BeautifulSoup object
@@ -55,8 +40,6 @@ def web_scrape(soup_object):
     game_df = pd.DataFrame(table_list, columns = ('Date', 'Away_Team', 'Away_Team_Score', 'Home_Team', 'Home_Team_Score', 'Weather_Temp', 'Weather_Type'))
     return game_df
 
-game_df = web_scrape(soup)
-
 #%%
 #The data from the website does not list the winner of the game
 #so I will create a new column that denotes if the given team was the winner. 
@@ -71,8 +54,6 @@ def win_column(df, team_name):
             df.at[i,'Win'] = 0
     return df 
 
-game_win_df = win_column(game_df, 'Denver Broncos')
-
 #%%
 #This function will calculate average temp and the number of wins
 def calculate_averages(df):
@@ -82,7 +63,6 @@ def calculate_averages(df):
     'The average number of wins from 2009 - 2018 is: ' + str(num_wins_rate) + '\n')
     return temp_avg, num_wins_rate
 
-calculate_averages(game_win_df)
 #%%
 #This function will plot a histogram of temperature values 
 # when you pass in a dataframe and save the image as the specified title
@@ -117,8 +97,6 @@ def temp_hist_plot(df, filename):
     plt.savefig('images/{}'.format(filename),facecolor = 'white' )
     return fig, axs
 
-temp_hist_plot(game_win_df, 'temp_hist')
-
 #%%
 #This function will plot two histograms of the temperature
 #for games won and games lost. 
@@ -142,21 +120,6 @@ def hist_win_loss(df, filename):
     plt.tight_layout()
     plt.savefig('images/{}'.format(filename), facecolor = 'white')
     return fig, axs
-    
-
-hist_win_loss(game_win_df, 'temp_win_loss')
-
-#%%
-#Discovering why there is a peak in the temp range(70,75)
-temp_70 = game_win_df[game_win_df['Weather_Temp'].between(70,75, inclusive=True)].reset_index()
-len(temp_70)
-
-#%%
-#Do we have more home games with this temperature?
-home_70 = temp_70[temp_70['Home_Team']=='Denver Broncos']
-len(home_70)/len(temp_70)
-
-#%%
 
 #%%
 #This will create a dataframe where the temperature 
