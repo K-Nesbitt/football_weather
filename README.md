@@ -13,7 +13,12 @@ Here are some histograms of the data:
 
 ![hist2](https://github.com/K-Nesbitt/football_weather/blob/master/images/temp_win_loss.png)
 
-You can see in the above graph that there is a spike in the number of games in the range from about 70-75. There were exactly 32 games where the temperature was between 70 and 75 degrees Farenheit. I looked into these games specifically to see if there were any other trends (dates, home vs away games, etc) but none were found. Here is a print out of the [data:](https://github.com/K-Nesbitt/football_weather/blob/master/data/Screen%20Shot%202019-05-30%20at%201.16.54%20PM.png)
+You can see in the above graph that there is a spike in the number of games in the range from about 70-75. There were exactly 32 games where the temperature was between 70 and 75 degrees Farenheit. About 56% of these games were at home so I considered what the average temperature is in Denver, CO during Football season (mainly Aug - Dec):
+
+
+This again seems puzzling since there is only one month were the average temperature is close to the peak temperature range. 
+
+I looked into these games specifically to see if there were any other trends (dates, home vs away games, etc) but none were found. Here is a print out of the [data:](https://github.com/K-Nesbitt/football_weather/blob/master/data/Screen%20Shot%202019-05-30%20at%201.16.54%20PM.png)
 
 ## Statistical Test Elements:
 1. Null Hypothesis: The sample means (winning rate) are identical
