@@ -48,13 +48,17 @@ The second hypothesis that I wanted to test was if there was a significant diffe
 
      The statistic value is 0.489 and the pvalue is 0.626
  
- So I am still unable to reject the Null Hypothesis. The average score for all games is 23.44 points, for games that are      below 62 degrees the average score is 22.04 points, and games that are above 62 degrees the average score is 24.78 points. 
  
- I will need to collect more data or change my sample population to determine if I can reject the Null Hypothesis.
+![plot1](https://github.com/K-Nesbitt/football_weather/blob/master/images/temp_vs_score.png)
+
+I am still unable to reject the Null Hypothesis. The average score for all games is 23.44 points, for games that are      below 62 degrees the average score is 22.04 points, and games that are above 62 degrees the average score is 24.78 points. 
+
 
 ## Reflection
-Follow up: separate data into a low temp range, mid/avg range, and high range. Then run test on low and high range. 
-Or consider weather type column
+I was unable to reject the Null Hypothesis that weather has no affect on the mean score, or chance of winning. 
+I will need to collect more data or change my sample population to determine if I can reject the Null Hypothesis. 
+
+For further study I would consider other teams and their conditions. For example, a team that has a home stadium average temperature around 80 degrees to determine if they play worse in colder temperatures. I can also consider teams that play in a Dome. 
 
 ## References
 1. NFLWeather.com, http://www.nflweather.com/en/
