@@ -207,3 +207,34 @@ def team_scores(df, team_name):
 t_score = team_scores(game_win_df, 'Denver Broncos')
 
 
+
+
+#%%
+temp_low_score = l_or_g(t_score, 'less')
+temp_high_score = l_or_g(t_score, 'more')
+temp_high_score
+#%%
+samp_l_score = temp_low_score.sample(n=50)
+samp_g_score = temp_high_score.sample(n=50)
+
+#%%
+#Ttest on two samples of low and high temperatures to see if their is a difference
+#in the mean value of their scores
+stat, pval = stats.ttest_ind(pd.to_numeric(samp_g_score['Score']), pd.to_numeric(samp_l_score['Score']), equal_var=False)
+print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
+
+#%%
+#Average score of games with temperature below average:
+temp_low_score['Score'] = pd.to_numeric(temp_low_score['Score'])
+temp_low_score['Score'].mean()
+#%%
+#Average score of games with temperature above average:
+temp_high_score['Score'] = pd.to_numeric(temp_high_score['Score'])
+temp_high_score['Score'].mean()
+
+#%%
+#Average score of all games
+t_score['Score'] = pd.to_numeric(t_score['Score'])
+t_score['Score'].mean()
+
+#%%
