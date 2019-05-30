@@ -32,5 +32,10 @@ By the histograms from above I hypothesized that there would be a some differenc
       
 Therefore I have failed to reject the Null Hypothesis since my p-value is not less than my significance level. 
 
+Out of curiosity and further wanting to check my hypothesis I decided to run another T-test on two different samples. This time I created a sample of games won and of games lost. I then ran the T-Test against the weather of theses two samples. 
+
+       The statistic value is -0.386 and the pvalue is 0.7
+
+This result continued to disprove my alternative hypothesis. 
 
 
