@@ -17,7 +17,7 @@ Here are some histograms of the data:
 
 You can see in the above graph that there is a spike in the number of games in the range from about 70-75. There were exactly 32 games where the temperature was between 70 and 75 degrees Farenheit. About 56% of these games were at home so I considered what the average temperature is in Denver, CO during Football season (mainly Aug - Dec):
 
-![weather graph](https://github.com/K-Nesbitt/football_weather/blob/master/images/Screen%20Shot%202019-05-30%20at%202.41.33%20PM.png)
+![weather graph](https://github.com/K-Nesbitt/football_weather/blob/master/images/Denver%20Weather%20Map.png)
 
 This again seems puzzling since there is only one month were the average temperature is close to the peak temperature range. 
 
