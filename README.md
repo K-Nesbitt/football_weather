@@ -73,15 +73,38 @@ The second hypothesis that I wanted to test was if there was a significant diffe
 
 I am still unable to reject the Null Hypothesis. The average score for all games is 23.44 points, for games that are      below 62 degrees the average score is 22.04 points, and games that are above 62 degrees the average score is 24.78 points. 
 
+## Round 2: Miami Dolphins
+I decided to look at a team who had a higher temperature average for home games. 
+![weather graph2](https://github.com/K-Nesbitt/football_weather/blob/master/images/Miami%20Weather%20Map.png)
 
+The dolphins clearly have a higher average temperture for their home games. So does weather affect their score values?
+
+![hist3](https://github.com/K-Nesbitt/football_weather/blob/master/images/dolphins_temp_hist.png)
+![hist4](https://github.com/K-Nesbitt/football_weather/blob/master/images/dolphins_win_loss.png)
+
+It looks like the distribution of winning and losing by temperature is the same. I still ran a T-test on the two populations: win and lost, to check if their mean temperatures were different and yielded:
+
+      The statistic value is 1.649 and the pvalue is 0.101
+
+I continued to investigate and plotted their score values against the temperature of a game:
+![plot2](https://github.com/K-Nesbitt/football_weather/blob/master/images/dolphins_score_plot.png)
+
+The T-test on their score averages gave these results:
+      
+      The statistic value is -1.146 and the pvalue is 0.254
+
+Therefore, I cannot reject the null hypothesis for the Miami Dolphins either. 
+
+      
 ## Reflection
-I was unable to reject the Null Hypothesis that weather has no affect on the mean score, or chance of winning. 
-I will need to collect more data or change my sample population to determine if I can reject the Null Hypothesis. 
+Even though I was unable to reject the null hypothesis that weather has no affect on the mean score, or chance of winning, I still enjoyed the research and skill building that this project entailed. I was able to build a web scraping program, create main functions, and then call those functions for both teams with little duplication of code. I was also able to make quality visualizations of my results. 
 
-For further study I would consider other teams and their conditions. For example, a team that has a home stadium average temperature around 80 degrees to determine if they play worse in colder temperatures. I can also consider teams that play in a Dome. 
+For further study I would like consider other factor such as: type of weather, playoffs, and quarterback performance by season.
 
 ## References
 1. NFLWeather.com, http://www.nflweather.com/en/
 2. TheWeatherChannel.com, https://weather.com/weather/monthly/l/675c2b6342b3512ea4f15bc9070663be6e36cc4bf61056076c500098c8eb3bbe
+
+https://weather.com/weather/monthly/l/3881cd527264bc7c99b6b541473c0085e75aa026b6bd99658c56ad9bb55bd96e
 
 
