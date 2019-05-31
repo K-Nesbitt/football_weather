@@ -1,0 +1,203 @@
+,Date,Away_Team,Away_Team_Score,Home_Team,Home_Team_Score,Weather_Temp,Weather_Type
+0,Sun 12/02/18 01:00 PM,Buffalo Bills,17,Miami Dolphins,21,85.0, Humid and Mostly Cloudy
+1,Sun 10/14/18 01:00 PM,Chicago Bears,28,Miami Dolphins,31,88.0, Humid and Partly Cloudy
+2,Sun 12/18/11 01:00 PM,Miami Dolphins,30,Buffalo Bills,23,32.0, Light Snow
+3,Sun 12/09/12 04:05 PM,Miami Dolphins,13,San Francisco 49ers,27,64.0, Fair
+4,Sun 09/08/13 01:00 PM,Miami Dolphins,23,Cleveland Browns,10,72.0, Partly Cloudy
+5,Sun 10/30/11 01:00 PM,Miami Dolphins,17,New York Giants,20,45.0, Fair
+6,Sun 12/03/17 01:00 PM,Denver Broncos,9,Miami Dolphins,35,80.0, Clear
+7,Sun 12/15/13 01:00 PM,New England Patriots,20,Miami Dolphins,24,85.0, Partly Cloudy
+8,Sun 11/29/09 01:00 PM,Miami Dolphins,14,Buffalo Bills,31,48.0, Partly Cloudy
+9,Thu 11/18/10 08:20 PM,Chicago Bears,16,Miami Dolphins,0,80.0, Fair
+10,Sun 11/25/12 01:00 PM,Seattle Seahawks,21,Miami Dolphins,24,74.0, Fair
+11,Sun 10/02/11 04:15 PM,Miami Dolphins,16,Los Angeles Chargers,26,83.0, Fair
+12,Thu 08/31/17 08:00 PM,Miami Dolphins,30,Minnesota Vikings,9,,DOME
+13,Fri 08/09/13 07:30 PM,Miami Dolphins,27,Jacksonville Jaguars,3,81.0, A Few Clouds
+14,Sun 09/28/14 01:00 PM,Miami Dolphins,38,Oakland Raiders,14,68.0, Partly Cloudy
+15,Sun 09/26/10 08:20 PM,New York Jets,31,Miami Dolphins,23,84.0, Fair
+16,Sat 08/23/14 07:00 PM,Dallas Cowboys,20,Miami Dolphins,25,85.0, A Few Clouds
+17,Sun 10/23/11 01:00 PM,Denver Broncos,18,Miami Dolphins,15,79.0, Partly Cloudy
+18,Sun 09/27/09 04:15 PM,Miami Dolphins,13,Los Angeles Chargers,23,78.0, Fair
+19,Sun 09/23/18 01:00 PM,Oakland Raiders,20,Miami Dolphins,28,88.0, Humid and Partly Cloudy
+20,Sun 11/26/17 01:00 PM,Miami Dolphins,17,New England Patriots,35,46.0, Partly Cloudy
+21,Fri 08/19/16 08:00 PM,Miami Dolphins,14,Dallas Cowboys,41,72.0, Humid and Partly Cloudy
+22,Sun 11/24/13 01:00 PM,Carolina Panthers,20,Miami Dolphins,16,80.0,  Light Rain
+23,Sun 12/17/17 01:00 PM,Miami Dolphins,16,Buffalo Bills,24,25.0, Overcast
+24,Sun 01/03/10 01:00 PM,Pittsburgh Steelers,30,Miami Dolphins,24,60.0, Fair
+25,Sun 11/08/09 01:00 PM,Miami Dolphins,17,New England Patriots,27,65.0, Fair
+26,Sun 11/27/16 01:00 PM,San Francisco 49ers,24,Miami Dolphins,31,79.0, Clear
+27,Sun 10/20/13 01:00 PM,Buffalo Bills,23,Miami Dolphins,21,87.0, Mostly Cloudy
+28,Sun 12/05/10 01:00 PM,Cleveland Browns,13,Miami Dolphins,10,76.0, Fair
+29,Sun 12/20/15 04:25 PM,Miami Dolphins,14,Los Angeles Chargers,30,60.0, Partly Cloudy
+30,Sun 11/04/18 01:00 PM,New York Jets,6,Miami Dolphins,13,84.0, Humid and Mostly Cloudy
+31,Sun 11/04/12 01:00 PM,Miami Dolphins,20,Indianapolis Colts,23,,DOME
+32,Sun 09/25/11 01:00 PM,Miami Dolphins,16,Cleveland Browns,17,77.0, Mostly Cloudy
+33,Sun 01/02/11 01:00 PM,Miami Dolphins,7,New England Patriots,38,46.0, Fog
+34,Sun 09/22/13 04:05 PM,Atlanta Falcons,23,Miami Dolphins,27,85.0, Fair
+35,Sun 11/19/17 01:00 PM,Tampa Bay Buccaneers,30,Miami Dolphins,20,80.0, Clear
+36,Sat 08/29/15 07:00 PM,Atlanta Falcons,9,Miami Dolphins,13,82.0, Light Rain
+37,Thu 11/13/14 08:25 PM,Buffalo Bills,9,Miami Dolphins,22,71.0, Fair
+38,Sun 11/01/09 01:00 PM,Miami Dolphins,30,New York Jets,25,54.0, Fair
+39,Sun 09/07/14 01:00 PM,New England Patriots,20,Miami Dolphins,33,89.0, Fair
+40,Thu 10/31/13 08:25 PM,Cincinnati Bengals,20,Miami Dolphins,22,78.0, A Few Clouds
+41,Fri 08/10/12 07:30 PM,Tampa Bay Buccaneers,20,Miami Dolphins,7,80.0,  Light Rain
+42,Sun 12/24/17 01:00 PM,Miami Dolphins,13,Kansas City Chiefs,29,22.0, Mostly Cloudy
+43,Sun 12/30/18 01:00 PM,Miami Dolphins,17,Buffalo Bills,42,28.0, Overcast
+44,Thu 08/27/09 08:00 PM,Miami Dolphins,10,Tampa Bay Buccaneers,6,79.0, Mostly Cloudy
+45,Sun 12/27/09 01:00 PM,Houston Texans,27,Miami Dolphins,20,75.0, Fair
+46,Sun 10/21/18 01:00 PM,Detroit Lions,32,Miami Dolphins,21,88.0, Partly Cloudy
+47,Sun 12/08/13 01:00 PM,Miami Dolphins,34,Pittsburgh Steelers,28,26.0,  Light Snow Fog/Mist
+48,Sun 09/27/15 04:25 PM,Buffalo Bills,41,Miami Dolphins,14,80.0, Mostly Cloudy
+49,Sun 10/18/15 01:00 PM,Miami Dolphins,38,Tennessee Titans,10,60.0, Clear
+50,Sun 10/19/14 01:00 PM,Miami Dolphins,27,Chicago Bears,14,55.0, Mostly Cloudy
+51,Thu 08/25/16 08:00 PM,Atlanta Falcons,6,Miami Dolphins,17,82.0, Clear
+52,Thu 08/28/14 07:00 PM,Los Angeles Rams,13,Miami Dolphins,14,84.0, Fair
+53,Thu 08/13/15 08:00 PM,Miami Dolphins,10,Chicago Bears,27,76.0, Mostly Cloudy
+54,Thu 08/30/18 07:00 PM,Miami Dolphins,34,Atlanta Falcons,7,,DOME
+55,Sun 09/30/12 04:05 PM,Miami Dolphins,21,Arizona Cardinals,24,,DOME
+56,Sun 10/01/17 09:30 AM,New Orleans Saints,20,Miami Dolphins,0,62.0, Mostly Cloudy
+57,Sat 08/21/10 07:30 PM,Miami Dolphins,27,Jacksonville Jaguars,26,90.0, Mostly Cloudy
+58,Sun 11/14/10 01:00 PM,Tennessee Titans,17,Miami Dolphins,29,80.0, Fair
+59,Sun 09/25/16 01:00 PM,Cleveland Browns,24,Miami Dolphins,30,85.0, Partly Cloudy
+60,Fri 08/17/18 07:30 PM,Miami Dolphins,20,Carolina Panthers,27,84.0, Clear
+61,Mon 09/21/09 08:30 PM,Indianapolis Colts,27,Miami Dolphins,23,85.0, Fair
+62,Sat 08/27/11 07:30 PM,Miami Dolphins,13,Tampa Bay Buccaneers,17,87.0, Partly Cloudy
+63,Sun 12/22/13 01:00 PM,Miami Dolphins,0,Buffalo Bills,19,36.0,  Light Rain Fog/Mist
+64,Sun 10/16/16 01:00 PM,Pittsburgh Steelers,15,Miami Dolphins,30,82.0, Partly Cloudy
+65,Sun 11/11/12 01:00 PM,Tennessee Titans,37,Miami Dolphins,3,79.0, Mostly Cloudy
+66,Sun 12/14/14 01:00 PM,Miami Dolphins,13,New England Patriots,41,43.0, Clear
+67,Sun 09/21/14 04:25 PM,Kansas City Chiefs,34,Miami Dolphins,15,84.0, Fair
+68,Thu 09/03/09 08:00 PM,Miami Dolphins,10,New Orleans Saints,7,,DOME
+69,Sun 12/12/10 04:15 PM,Miami Dolphins,10,New York Jets,6,54.0, Mostly Cloudy
+70,Sun 11/22/15 01:00 PM,Dallas Cowboys,24,Miami Dolphins,14,75.0, Partly Cloudy
+71,Sun 10/23/16 01:00 PM,Buffalo Bills,25,Miami Dolphins,28,80.0, Partly Cloudy
+72,Fri 08/17/12 08:00 PM,Miami Dolphins,17,Carolina Panthers,23,74.0, Mostly Cloudy
+73,Mon 09/30/13 08:30 PM,Miami Dolphins,17,New Orleans Saints,38,,DOME
+74,Sun 09/30/18 01:00 PM,Miami Dolphins,7,New England Patriots,38,66.0, Clear
+75,Sun 10/07/12 01:00 PM,Miami Dolphins,17,Cincinnati Bengals,13,51.0, Mostly Cloudy
+76,Sun 10/22/17 01:00 PM,New York Jets,28,Miami Dolphins,31,85.0, Humid and Partly Cloudy
+77,Mon 11/11/13 08:30 PM,Miami Dolphins,19,Tampa Bay Buccaneers,22,72.0, Partly Cloudy
+78,Sun 10/31/10 01:00 PM,Miami Dolphins,22,Cincinnati Bengals,14,52.0, Fair
+79,Sun 12/20/09 01:00 PM,Miami Dolphins,24,Tennessee Titans,27,35.0, Overcast
+80,Sun 12/23/18 01:00 PM,Jacksonville Jaguars,17,Miami Dolphins,7,71.0, Clear
+81,Sun 12/09/18 01:00 PM,New England Patriots,33,Miami Dolphins,34,80.0, Humid and Mostly Cloudy
+82,Sat 08/16/14 07:30 PM,Miami Dolphins,20,Tampa Bay Buccaneers,14,82.0, Partly Cloudy
+83,Sat 08/24/13 07:30 PM,Tampa Bay Buccaneers,17,Miami Dolphins,16,82.0,  Light Rain
+84,Mon 09/12/11 07:00 PM,New England Patriots,38,Miami Dolphins,24,82.0, Fair
+85,Fri 08/12/16 07:00 PM,Miami Dolphins,27,New York Giants,10,85.0, Rain
+86,Thu 10/29/15 08:25 PM,Miami Dolphins,7,New England Patriots,36,53.0, Clear
+87,Thu 11/15/12 08:20 PM,Miami Dolphins,14,Buffalo Bills,19,36.0, A Few Clouds
+88,Sun 09/19/10 01:00 PM,Miami Dolphins,14,Minnesota Vikings,10,,DOME
+89,Mon 12/01/14 08:30 PM,Miami Dolphins,16,New York Jets,13,43.0, A Few Clouds
+90,Sun 10/17/10 01:00 PM,Miami Dolphins,23,Green Bay Packers,20,54.0, Fair
+91,Sun 11/11/18 01:00 PM,Miami Dolphins,12,Green Bay Packers,31,30.0, Overcast
+92,Sun 12/21/14 01:00 PM,Minnesota Vikings,35,Miami Dolphins,37,78.0, Mostly Cloudy
+93,Fri 08/12/11 07:30 PM,Miami Dolphins,28,Atlanta Falcons,23,,DOME
+94,Sun 10/12/14 01:00 PM,Green Bay Packers,27,Miami Dolphins,24,88.0, Mostly Cloudy
+95,Sun 12/07/14 01:00 PM,Baltimore Ravens,28,Miami Dolphins,13,77.0, Partly Cloudy
+96,Sun 11/25/18 01:00 PM,Miami Dolphins,24,Indianapolis Colts,27,,DOME
+97,Sun 12/23/12 01:00 PM,Buffalo Bills,10,Miami Dolphins,24,72.0, Partly Cloudy
+98,Sun 01/01/17 01:00 PM,New England Patriots,35,Miami Dolphins,14,80.0, Mostly Cloudy
+99,Sun 10/04/09 04:05 PM,Buffalo Bills,10,Miami Dolphins,38,89.0, Fair
+100,Mon 10/17/11 08:30 PM,Miami Dolphins,6,New York Jets,24,69.0, Fair
+101,Sun 12/19/10 01:00 PM,Buffalo Bills,17,Miami Dolphins,14,65.0, Fair
+102,Sun 09/09/18 01:00 PM,Tennessee Titans,20,Miami Dolphins,27,88.0, Rain
+103,Sun 11/17/13 04:05 PM,Los Angeles Chargers,16,Miami Dolphins,20,80.0, A Few Clouds
+104,Sun 11/28/10 04:05 PM,Miami Dolphins,33,Oakland Raiders,17,52.0, Mostly Cloudy
+105,Sun 12/01/13 01:00 PM,Miami Dolphins,23,New York Jets,3,49.0, Overcast
+106,Sun 01/01/12 01:00 PM,New York Jets,17,Miami Dolphins,19,77.0, A Few Clouds
+107,Thu 08/17/17 07:00 PM,Baltimore Ravens,31,Miami Dolphins,7,88.0, Clear
+108,Sun 10/14/12 01:00 PM,Los Angeles Rams,14,Miami Dolphins,17,85.0, Mostly Cloudy
+109,Sun 12/11/11 01:00 PM,Philadelphia Eagles,26,Miami Dolphins,10,78.0, Partly Cloudy
+110,Sat 08/14/10 07:00 PM,Tampa Bay Buccaneers,7,Miami Dolphins,10,88.0, A Few Clouds
+111,Sun 11/20/11 01:00 PM,Buffalo Bills,8,Miami Dolphins,35,75.0, Light Rain
+112,Thu 09/29/16 08:25 PM,Miami Dolphins,7,Cincinnati Bengals,22,59.0, Mostly Cloudy
+113,Sun 10/07/18 01:00 PM,Miami Dolphins,17,Cincinnati Bengals,27,86.0, Clear
+114,Sun 12/04/11 01:00 PM,Oakland Raiders,14,Miami Dolphins,34,80.0, Partly Cloudy
+115,Sun 12/30/12 04:25 PM,Miami Dolphins,0,New England Patriots,28,28.0, Fair
+116,Sun 10/09/16 01:00 PM,Tennessee Titans,30,Miami Dolphins,17,87.0, Clear
+117,Sat 12/24/11 01:00 PM,Miami Dolphins,24,New England Patriots,27,32.0, Fair
+118,Thu 09/01/11 07:30 PM,Dallas Cowboys,3,Miami Dolphins,17,77.0, Light Rain
+119,Sun 11/07/10 01:00 PM,Miami Dolphins,10,Baltimore Ravens,26,43.0, Fair
+120,Fri 08/08/14 07:00 PM,Miami Dolphins,10,Atlanta Falcons,16,,DOME
+121,Thu 09/02/10 08:00 PM,Miami Dolphins,25,Dallas Cowboys,27,86.0, Mostly Cloudy
+122,Sun 12/13/09 01:00 PM,Miami Dolphins,14,Jacksonville Jaguars,10,77.0, Mostly Cloudy
+123,Thu 08/24/17 07:00 PM,Miami Dolphins,31,Philadelphia Eagles,38,75.0, Clear
+124,Sun 10/08/17 01:00 PM,Tennessee Titans,10,Miami Dolphins,16,89.0, Clear
+125,Sun 09/14/14 01:00 PM,Miami Dolphins,10,Buffalo Bills,29,61.0, Mostly Cloudy
+126,Mon 10/04/10 08:30 PM,New England Patriots,41,Miami Dolphins,14,81.0, Fair
+127,Sun 11/15/15 01:00 PM,Miami Dolphins,20,Philadelphia Eagles,19,59.0, Clear
+128,Sat 08/25/18 07:00 PM,Baltimore Ravens,27,Miami Dolphins,10,79.0, Humid and Mostly Cloudy
+129,Sun 11/23/14 04:25 PM,Miami Dolphins,36,Denver Broncos,39,36.0,   Showers in Vicinity
+130,Sun 08/04/13 08:00 PM,Miami Dolphins,20,Dallas Cowboys,24,62.0, Partly Cloudy
+131,Sun 09/17/17 04:05 PM,Miami Dolphins,19,Los Angeles Chargers,17,71.0, Partly Cloudy
+132,Sun 11/29/15 01:00 PM,Miami Dolphins,20,New York Jets,38,48.0, Clear
+133,Sun 10/26/14 01:00 PM,Miami Dolphins,27,Jacksonville Jaguars,13,81.0, Fair
+134,Sun 09/24/17 01:00 PM,Miami Dolphins,6,New York Jets,20,87.0, Clear
+135,Sun 01/08/17 01:05 PM,Miami Dolphins,12,Pittsburgh Steelers,30,14.0, Partly Cloudy
+136,Fri 08/19/11 07:30 PM,Carolina Panthers,10,Miami Dolphins,20,79.0, Fair
+137,Sun 09/20/15 04:05 PM,Miami Dolphins,20,Jacksonville Jaguars,23,83.0, Clear
+138,Thu 09/03/15 07:00 PM,Tampa Bay Buccaneers,22,Miami Dolphins,17,80.0, Partly Cloudy
+139,Sat 12/24/16 01:00 PM,Miami Dolphins,34,Buffalo Bills,31,35.0, Overcast
+140,Wed 08/29/12 08:30 PM,Miami Dolphins,13,Dallas Cowboys,30,90.0, Clear
+141,Sun 11/02/14 01:00 PM,Los Angeles Chargers,0,Miami Dolphins,37,69.0, Fair
+142,Sat 12/17/16 08:25 PM,Miami Dolphins,34,New York Jets,13,34.0, Mostly Cloudy
+143,Sun 12/27/15 01:00 PM,Indianapolis Colts,18,Miami Dolphins,12,81.0, Partly Cloudy
+144,Sun 12/16/12 01:00 PM,Jacksonville Jaguars,3,Miami Dolphins,24,78.0, A Few Clouds
+145,Thu 09/01/16 07:00 PM,Tennessee Titans,21,Miami Dolphins,10,85.0, Partly Cloudy
+146,Sun 11/09/14 01:00 PM,Miami Dolphins,16,Detroit Lions,20,,DOME
+147,Thu 11/24/11 04:15 PM,Miami Dolphins,19,Dallas Cowboys,20,59.0, Clear
+148,Sun 10/28/12 01:00 PM,Miami Dolphins,30,New York Jets,9,59.0, Overcast
+149,Sun 12/06/09 01:00 PM,New England Patriots,21,Miami Dolphins,22,70.0, Light Rain
+150,Sun 11/06/16 01:00 PM,New York Jets,23,Miami Dolphins,27,79.0, Clear
+151,Mon 08/17/09 07:30 PM,Jacksonville Jaguars,9,Miami Dolphins,12,86.0, Fair
+152,Sun 09/15/13 01:00 PM,Miami Dolphins,24,Indianapolis Colts,20,,DOME
+153,Sun 12/02/12 01:00 PM,New England Patriots,23,Miami Dolphins,16,78.0, Mostly Cloudy
+154,Sun 09/18/16 01:00 PM,Miami Dolphins,24,New England Patriots,31,78.0, Partly Cloudy
+155,Sun 09/16/12 04:15 PM,Oakland Raiders,13,Miami Dolphins,35,83.0, Mostly Cloudy
+156,Sat 08/17/13 08:00 PM,Miami Dolphins,17,Houston Texans,24,84.0, A Few Clouds
+157,Sun 09/09/12 01:00 PM,Miami Dolphins,10,Houston Texans,30,83.0, A Few Clouds
+158,Thu 11/19/09 08:20 PM,Miami Dolphins,24,Carolina Panthers,17,61.0, Partly Sunny
+159,Mon 10/12/09 08:30 PM,New York Jets,27,Miami Dolphins,31,84.0, Fair
+160,Mon 12/14/15 08:30 PM,New York Giants,31,Miami Dolphins,24,75.0, Humid
+161,Sun 11/06/11 01:00 PM,Miami Dolphins,31,Kansas City Chiefs,3,63.0, Mostly Cloudy
+162,Sun 12/04/16 01:00 PM,Miami Dolphins,6,Baltimore Ravens,38,45.0, Clear
+163,Sat 08/22/15 07:00 PM,Miami Dolphins,30,Carolina Panthers,31,77.0, Partly Cloudy
+164,Fri 08/27/10 07:00 PM,Atlanta Falcons,16,Miami Dolphins,6,89.0, Fair
+165,Sun 10/04/15 09:30 AM,New York Jets,27,Miami Dolphins,14,62.0, Partly Cloudy
+166,Thu 08/29/13 07:30 PM,New Orleans Saints,21,Miami Dolphins,24,82.0, Fair
+167,Sun 11/08/15 01:00 PM,Miami Dolphins,17,Buffalo Bills,33,47.0, Clear
+168,Sun 12/26/10 01:00 PM,Detroit Lions,34,Miami Dolphins,27,66.0, Fair and Breezy
+169,Thu 10/26/17 08:25 PM,Miami Dolphins,0,Baltimore Ravens,40,48.0, Clear
+170,Mon 12/11/17 08:30 PM,New England Patriots,20,Miami Dolphins,27,56.0, Clear
+171,Sun 01/03/16 01:00 PM,New England Patriots,10,Miami Dolphins,20,78.0, Mostly Cloudy
+172,Thu 10/25/18 08:20 PM,Miami Dolphins,23,Houston Texans,42,65.0, Overcast
+173,Sun 10/24/10 01:00 PM,Pittsburgh Steelers,23,Miami Dolphins,22,78.0, Heavy Rain Fog/Mist
+174,Sun 09/11/16 04:05 PM,Miami Dolphins,10,Seattle Seahawks,12,64.0, Partly Cloudy
+175,Mon 11/13/17 08:30 PM,Miami Dolphins,21,Carolina Panthers,45,52.0, Clear
+176,Sun 12/16/18 01:00 PM,Miami Dolphins,17,Minnesota Vikings,41,,DOME
+177,Sun 09/13/15 01:00 PM,Miami Dolphins,17,Washington Redskins,10,71.0, Partly Cloudy
+178,Sun 09/12/10 01:00 PM,Miami Dolphins,15,Buffalo Bills,10,64.0, Overcast
+179,Sun 10/25/09 04:15 PM,New Orleans Saints,46,Miami Dolphins,34,86.0, Fair
+180,Sun 11/20/16 04:05 PM,Miami Dolphins,14,Los Angeles Rams,10,63.0, Partly Cloudy
+181,Sun 11/15/09 01:00 PM,Tampa Bay Buccaneers,23,Miami Dolphins,25,0.0, Clear
+182,Sun 10/25/15 01:00 PM,Houston Texans,26,Miami Dolphins,44,82.0, Mostly Cloudy
+183,Sun 11/13/11 01:00 PM,Washington Redskins,9,Miami Dolphins,20,78.0, Partly Cloudy
+184,Sun 12/31/17 04:25 PM,Buffalo Bills,22,Miami Dolphins,16,71.0, Clear
+185,Thu 08/10/17 07:00 PM,Atlanta Falcons,20,Miami Dolphins,23,83.0, Mostly Cloudy
+186,Sun 10/15/17 01:00 PM,Miami Dolphins,20,Atlanta Falcons,17,,DOME
+187,Thu 08/09/18 07:00 PM,Tampa Bay Buccaneers,26,Miami Dolphins,24,81.0, Humid and Partly Cloudy
+188,Sun 09/18/11 04:15 PM,Houston Texans,23,Miami Dolphins,13,87.0, A Few Clouds
+189,Sun 12/06/15 01:00 PM,Baltimore Ravens,13,Miami Dolphins,15,78.0, Mostly Cloudy
+190,Sun 09/13/09 01:00 PM,Miami Dolphins,7,Atlanta Falcons,19,,DOME
+191,Sat 08/22/09 07:30 PM,Carolina Panthers,17,Miami Dolphins,27,88.0, Fair
+192,Sun 12/28/14 01:00 PM,New York Jets,37,Miami Dolphins,24,80.0, Partly Cloudy
+193,Sun 09/16/18 01:00 PM,Miami Dolphins,20,New York Jets,12,82.0, Clear
+194,Fri 08/24/12 07:30 PM,Atlanta Falcons,23,Miami Dolphins,6,82.0, Fair
+195,Sun 11/05/17 08:30 PM,Oakland Raiders,27,Miami Dolphins,24,76.0, Clear
+196,Sun 10/27/13 01:00 PM,Miami Dolphins,17,New England Patriots,27,53.0, Partly Cloudy
+197,Sun 12/11/16 01:00 PM,Arizona Cardinals,23,Miami Dolphins,26,75.0, Partly Cloudy
+198,Sun 10/06/13 01:00 PM,Baltimore Ravens,26,Miami Dolphins,23,87.0, A Few Clouds
+199,Sun 11/13/16 04:05 PM,Miami Dolphins,31,Los Angeles Chargers,24,84.0, Clear
+200,Sun 09/23/12 01:00 PM,New York Jets,23,Miami Dolphins,20,79.0,   Thunderstorm in Vicinity Light Rain Fog/Mist
+201,Sun 12/29/13 01:00 PM,New York Jets,20,Miami Dolphins,7,79.0, Mostly Cloudy

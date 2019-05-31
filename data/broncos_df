@@ -1,0 +1,211 @@
+,Date,Away_Team,Away_Team_Score,Home_Team,Home_Team_Score,Weather_Temp,Weather_Type
+0,Sun 11/27/16 08:30 PM,Kansas City Chiefs,30,Denver Broncos,27,44.0, Mostly Cloudy
+1,Sun 10/06/13 04:25 PM,Denver Broncos,51,Dallas Cowboys,48,75.0, Clear
+2,Sun 10/13/13 04:05 PM,Jacksonville Jaguars,19,Denver Broncos,35,59.0, Partly Cloudy with Haze
+3,Sat 08/23/14 09:00 PM,Houston Texans,18,Denver Broncos,17,68.0, Partly Cloudy
+4,Sun 09/17/17 04:25 PM,Dallas Cowboys,17,Denver Broncos,42,69.0, Partly Cloudy
+5,Sun 12/03/17 01:00 PM,Denver Broncos,9,Miami Dolphins,35,80.0, Clear
+6,Sat 08/27/16 09:00 PM,Los Angeles Rams,9,Denver Broncos,17,76.0, Mostly Cloudy
+7,Thu 08/28/14 08:00 PM,Denver Broncos,27,Dallas Cowboys,3,90.0, Mostly Cloudy
+8,Sat 08/20/11 08:30 PM,Buffalo Bills,10,Denver Broncos,24,86.0, Partly Cloudy
+9,Sun 12/30/12 04:25 PM,Kansas City Chiefs,3,Denver Broncos,38,30.0, Partly Cloudy
+10,Sun 11/19/17 04:25 PM,Cincinnati Bengals,20,Denver Broncos,17,59.0, Clear
+11,Sun 12/24/17 01:00 PM,Denver Broncos,11,Washington Redskins,27,41.0, Partly Cloudy
+12,Sun 10/11/09 04:15 PM,New England Patriots,17,Denver Broncos,20,28.0, Overcast with Haze
+13,Thu 08/31/17 09:00 PM,Arizona Cardinals,2,Denver Broncos,30,73.0, Clear
+14,Sun 12/11/16 01:00 PM,Denver Broncos,10,Tennessee Titans,13,48.0, Partly Cloudy
+15,Sun 09/25/16 01:00 PM,Denver Broncos,29,Cincinnati Bengals,17,82.0, Clear
+16,Sun 08/26/12 04:00 PM,San Francisco 49ers,29,Denver Broncos,24,91.0, Partly Cloudy
+17,Sun 11/01/09 01:00 PM,Denver Broncos,7,Baltimore Ravens,30,50.0, Light Rain
+18,Sun 10/23/11 01:00 PM,Denver Broncos,18,Miami Dolphins,15,79.0, Partly Cloudy
+19,Fri 08/24/18 07:30 PM,Denver Broncos,29,Washington Redskins,17,76.0, Clear
+20,Sun 12/18/11 04:15 PM,New England Patriots,41,Denver Broncos,23,59.0, A Few Clouds
+21,Fri 08/14/15 10:00 PM,Denver Broncos,22,Seattle Seahawks,20,61.0, Mostly Cloudy
+22,Sat 08/17/13 10:00 PM,Denver Broncos,10,Seattle Seahawks,40,69.0, A Few Clouds
+23,Sun 12/26/10 04:05 PM,Houston Texans,23,Denver Broncos,24,48.0, Mostly Cloudy
+24,Sun 12/25/16 08:30 PM,Denver Broncos,10,Kansas City Chiefs,33,60.0, Heavy Rain
+25,Sat 08/22/09 08:30 PM,Denver Broncos,13,Seattle Seahawks,27,72.0, Fair
+26,Sun 11/09/14 04:05 PM,Denver Broncos,41,Oakland Raiders,17,69.0, A Few Clouds
+27,Mon 09/17/12 08:30 PM,Denver Broncos,21,Atlanta Falcons,27,,DOME
+28,Sun 08/30/09 08:00 PM,Chicago Bears,27,Denver Broncos,17,66.0, Overcast
+29,Sun 11/13/16 01:00 PM,Denver Broncos,25,New Orleans Saints,23,,DOME
+30,Sun 12/20/15 04:25 PM,Denver Broncos,27,Pittsburgh Steelers,34,36.0, Clear
+31,Sat 08/18/12 09:00 PM,Seattle Seahawks,30,Denver Broncos,10,73.0, Partly Cloudy
+32,Sat 08/27/11 09:00 PM,Seattle Seahawks,20,Denver Broncos,23,79.0, Mostly Cloudy
+33,Sun 12/10/17 04:05 PM,New York Jets,0,Denver Broncos,23,58.0, Clear
+34,Thu 08/10/17 08:00 PM,Denver Broncos,24,Chicago Bears,17,75.0, Rain
+35,Sun 11/05/17 01:00 PM,Denver Broncos,23,Philadelphia Eagles,51,62.0, Overcast
+36,Sun 12/11/11 04:05 PM,Chicago Bears,10,Denver Broncos,13,46.0, A Few Clouds
+37,Sun 12/09/18 04:05 PM,Denver Broncos,14,San Francisco 49ers,20,54.0, Mostly Cloudy
+38,Sun 10/11/15 04:25 PM,Denver Broncos,16,Oakland Raiders,10,76.0, Clear
+39,Sun 12/22/13 01:00 PM,Denver Broncos,37,Houston Texans,13,59.0, Overcast
+40,Sun 10/19/14 08:30 PM,San Francisco 49ers,17,Denver Broncos,42,63.0, A Few Clouds
+41,Sun 11/06/11 04:05 PM,Denver Broncos,38,Oakland Raiders,24,62.0, Mostly Cloudy
+42,Sun 12/06/09 01:00 PM,Denver Broncos,44,Kansas City Chiefs,13,37.0, Fair
+43,Sun 10/02/16 04:05 PM,Denver Broncos,27,Tampa Bay Buccaneers,7,89.0, Drizzle
+44,Sat 08/11/18 09:00 PM,Minnesota Vikings,42,Denver Broncos,28,87.0, Clear
+45,Thu 11/26/09 08:20 PM,New York Giants,6,Denver Broncos,26,52.0, A Few Clouds
+46,Thu 10/23/14 08:25 PM,Los Angeles Chargers,21,Denver Broncos,35,61.0, Partly Cloudy
+47,Thu 09/02/10 08:00 PM,Denver Broncos,24,Minnesota Vikings,31,,DOME
+48,Sun 12/06/15 04:05 PM,Denver Broncos,17,Los Angeles Chargers,3,71.0, Partly Cloudy
+49,Sun 11/08/15 04:25 PM,Denver Broncos,24,Indianapolis Colts,27,,DOME
+50,Sat 08/24/13 08:00 PM,Los Angeles Rams,26,Denver Broncos,27,75.0, Overcast
+51,Thu 08/11/16 08:00 PM,Denver Broncos,22,Chicago Bears,0,86.0, Clear
+52,Sun 09/16/18 04:25 PM,Oakland Raiders,19,Denver Broncos,20,90.0, Clear
+53,Sun 12/19/10 04:15 PM,Denver Broncos,23,Oakland Raiders,39,55.0, Light Rain
+54,Sun 10/07/12 04:15 PM,Denver Broncos,21,New England Patriots,31,53.0, Overcast
+55,Sun 10/22/17 04:25 PM,Denver Broncos,0,Los Angeles Chargers,21,89.0, Clear
+56,Sat 08/21/10 09:00 PM,Detroit Lions,25,Denver Broncos,20,91.0, Mostly Cloudy
+57,Sun 09/25/11 01:00 PM,Denver Broncos,14,Tennessee Titans,17,78.0, Partly Cloudy
+58,Sat 08/29/15 09:00 PM,San Francisco 49ers,12,Denver Broncos,19,73.0, Partly Cloudy
+59,Mon 09/12/11 10:15 PM,Oakland Raiders,23,Denver Broncos,20,73.0, Mostly Cloudy
+60,Sun 08/15/10 07:00 PM,Denver Broncos,24,Cincinnati Bengals,33,74.0, Light Rain
+61,Mon 10/19/09 08:30 PM,Denver Broncos,34,Los Angeles Chargers,23,70.0, Overcast
+62,Sun 11/17/13 08:30 PM,Kansas City Chiefs,17,Denver Broncos,27,, Breezy
+63,Sun 10/24/10 04:15 PM,Oakland Raiders,59,Denver Broncos,14,59.0, Mostly Cloudy
+64,Sat 01/19/13 01:05 PM,New England Patriots,16,Denver Broncos,26,63.0, Clear
+65,Sun 09/18/16 04:25 PM,Indianapolis Colts,20,Denver Broncos,34,86.0, Clear
+66,Sun 09/27/09 04:15 PM,Denver Broncos,23,Oakland Raiders,3,77.0, Fair
+67,Sun 12/28/14 04:25 PM,Oakland Raiders,14,Denver Broncos,47,33.0, Partly Cloudy
+68,Sun 11/13/11 01:00 PM,Denver Broncos,17,Kansas City Chiefs,10,69.0, Fair
+69,Sun 10/31/10 01:00 PM,Denver Broncos,16,San Francisco 49ers,24,54.0, Overcast
+70,Thu 09/03/09 09:00 PM,Arizona Cardinals,0,Denver Broncos,19,77.0, Partly Cloudy
+71,Sun 12/30/18 04:25 PM,Los Angeles Chargers,23,Denver Broncos,9,51.0, Partly Cloudy
+72,Sun 09/09/12 08:20 PM,Pittsburgh Steelers,19,Denver Broncos,31,82.0, A Few Clouds
+73,Sun 11/04/12 01:00 PM,Denver Broncos,31,Cincinnati Bengals,23,48.0, Overcast
+74,Sun 12/27/09 04:05 PM,Denver Broncos,27,Philadelphia Eagles,30,49.0, A Few Clouds
+75,Sun 11/28/10 04:15 PM,Los Angeles Rams,36,Denver Broncos,33,43.0, Mostly Cloudy and Breezy
+76,Sun 10/05/14 04:05 PM,Arizona Cardinals,20,Denver Broncos,41,72.0, Partly Cloudy
+77,Sun 10/09/16 04:05 PM,Atlanta Falcons,23,Denver Broncos,16,73.0, Mostly Cloudy
+78,Sun 11/30/14 08:30 PM,Denver Broncos,29,Kansas City Chiefs,16,25.0, Fair
+79,Thu 08/09/12 08:30 PM,Denver Broncos,31,Chicago Bears,3,68.0, Mostly Cloudy
+80,Sat 08/22/15 08:00 PM,Denver Broncos,14,Houston Texans,10,81.0, Partly Cloudy
+81,Sun 10/20/13 08:30 PM,Denver Broncos,33,Indianapolis Colts,39,,DOME
+82,Sun 11/18/12 04:15 PM,Los Angeles Chargers,23,Denver Broncos,30,63.0, Partly Cloudy
+83,Sun 09/27/15 08:30 PM,Denver Broncos,24,Detroit Lions,12,,DOME
+84,Sun 01/03/10 04:15 PM,Kansas City Chiefs,44,Denver Broncos,24,36.0, Overcast
+85,Thu 08/30/18 10:00 PM,Denver Broncos,21,Arizona Cardinals,10,,DOME
+86,Thu 09/08/16 08:30 PM,Carolina Panthers,20,Denver Broncos,21,82.0, Clear
+87,Sun 01/01/12 04:15 PM,Kansas City Chiefs,7,Denver Broncos,3,32.0, Mostly Cloudy
+88,Sun 11/14/10 04:05 PM,Kansas City Chiefs,29,Denver Broncos,49,39.0, Mostly Cloudy
+89,Sun 09/09/18 04:25 PM,Seattle Seahawks,24,Denver Broncos,27,85.0, Clear
+90,Sun 08/17/14 04:00 PM,Denver Broncos,34,San Francisco 49ers,0,77.0, Fair
+91,Sun 11/16/14 01:00 PM,Denver Broncos,7,Los Angeles Rams,22,,DOME
+92,Sun 09/23/12 04:15 PM,Houston Texans,31,Denver Broncos,25,86.0, Partly Cloudy
+93,Sat 08/26/17 09:00 PM,Green Bay Packers,17,Denver Broncos,20,86.0, Clear
+94,Sun 10/28/18 01:00 PM,Denver Broncos,23,Kansas City Chiefs,30,60.0, Clear
+95,Sun 10/04/15 04:25 PM,Minnesota Vikings,20,Denver Broncos,23,60.0, Mostly Cloudy
+96,Sun 01/02/11 04:15 PM,Los Angeles Chargers,33,Denver Broncos,28,45.0, Mostly Cloudy
+97,Sun 12/01/13 01:00 PM,Denver Broncos,35,Kansas City Chiefs,28,53.0, Fair with Haze
+98,Sun 12/14/14 04:05 PM,Denver Broncos,22,Los Angeles Chargers,10,62.0, Partly Cloudy
+99,Thu 12/14/17 08:25 PM,Denver Broncos,25,Indianapolis Colts,13,,DOME
+100,Sun 10/12/14 01:00 PM,Denver Broncos,31,New York Jets,17,64.0, Fair
+101,Sun 10/17/10 04:05 PM,New York Jets,24,Denver Broncos,20,73.0, Partly Cloudy
+102,Sun 01/01/17 04:25 PM,Oakland Raiders,6,Denver Broncos,24,48.0, Partly Cloudy
+103,Sun 10/10/10 01:00 PM,Denver Broncos,17,Baltimore Ravens,31,70.0, Mostly Sunny
+104,Sun 11/11/12 01:00 PM,Denver Broncos,36,Carolina Panthers,14,71.0, Mostly Cloudy
+105,Thu 12/12/13 08:25 PM,Los Angeles Chargers,27,Denver Broncos,20,39.0, A Few Clouds
+106,Sun 01/24/16 03:05 PM,New England Patriots,18,Denver Broncos,20,43.0, Mostly Cloudy
+107,Sun 10/07/18 01:00 PM,Denver Broncos,16,New York Jets,34,75.0, Overcast
+108,Sun 12/02/18 01:00 PM,Denver Broncos,24,Cincinnati Bengals,10,63.0, Clear
+109,Sun 12/07/14 04:05 PM,Buffalo Bills,17,Denver Broncos,24,55.0, Clear
+110,Sun 11/25/18 04:25 PM,Pittsburgh Steelers,17,Denver Broncos,24,41.0, Clear
+111,Sat 08/19/17 10:00 PM,Denver Broncos,33,San Francisco 49ers,14,69.0, Possible Drizzle
+112,Sun 01/17/16 04:40 PM,Pittsburgh Steelers,16,Denver Broncos,23,40.0, Partly Cloudy
+113,Sun 10/01/17 04:25 PM,Oakland Raiders,10,Denver Broncos,16,70.0, Possible Drizzle
+114,Sun 10/02/11 04:15 PM,Denver Broncos,23,Green Bay Packers,49,68.0, Fair
+115,Sun 09/18/11 04:15 PM,Cincinnati Bengals,22,Denver Broncos,24,73.0, Partly Cloudy
+116,Sun 09/26/10 04:15 PM,Indianapolis Colts,27,Denver Broncos,13,82.0, Clear
+117,Sun 11/27/11 04:15 PM,Denver Broncos,16,Los Angeles Chargers,13,82.0, Fair
+118,Thu 09/01/16 09:30 PM,Denver Broncos,17,Arizona Cardinals,38,,DOME
+119,Sun 11/18/18 04:05 PM,Denver Broncos,23,Los Angeles Chargers,22,70.0, Clear
+120,Mon 12/28/15 08:30 PM,Cincinnati Bengals,17,Denver Broncos,20,16.0, Partly Cloudy
+121,Sun 01/03/16 04:25 PM,Los Angeles Chargers,20,Denver Broncos,27,44.0, Clear
+122,Sat 01/12/13 04:30 PM,Baltimore Ravens,38,Denver Broncos,35,14.0, Mostly Cloudy
+123,Mon 11/22/10 08:30 PM,Denver Broncos,14,Los Angeles Chargers,35,57.0, Partly Cloudy
+124,Sun 09/19/10 04:05 PM,Seattle Seahawks,14,Denver Broncos,31,90.0, Clear
+125,Sun 11/23/14 04:25 PM,Miami Dolphins,36,Denver Broncos,39,36.0,   Showers in Vicinity
+126,Sun 12/23/12 04:05 PM,Cleveland Browns,12,Denver Broncos,34,48.0, Partly Cloudy
+127,Sun 09/20/09 04:15 PM,Cleveland Browns,6,Denver Broncos,27,82.0, Partly Cloudy
+128,Sun 11/22/15 01:00 PM,Denver Broncos,17,Chicago Bears,15,29.0, Clear
+129,Sun 12/13/15 04:05 PM,Oakland Raiders,15,Denver Broncos,12,39.0, Partly Cloudy
+130,Sun 11/24/13 08:30 PM,Denver Broncos,31,New England Patriots,34,23.0, Fair
+131,Thu 09/05/13 08:30 PM,Baltimore Ravens,27,Denver Broncos,49,81.0, Mostly Cloudy
+132,Sat 01/14/12 08:00 PM,Denver Broncos,10,New England Patriots,45,24.0, Mostly Cloudy
+133,Sat 12/24/11 01:00 PM,Denver Broncos,14,Buffalo Bills,40,31.0, A Few Clouds
+134,Mon 10/24/16 08:30 PM,Houston Texans,9,Denver Broncos,27,66.0, Partly Cloudy
+135,Thu 08/07/14 09:00 PM,Seattle Seahawks,16,Denver Broncos,21,68.0, Mostly Cloudy
+136,Sun 12/18/16 04:25 PM,New England Patriots,16,Denver Broncos,3,27.0, Clear
+137,Sun 10/28/12 08:20 PM,New Orleans Saints,14,Denver Broncos,34,54.0, Partly Cloudy
+138,Sun 10/04/09 04:15 PM,Dallas Cowboys,10,Denver Broncos,17,54.0, Mostly Cloudy
+139,Sun 11/02/14 04:25 PM,Denver Broncos,21,New England Patriots,43,41.0, Fair and Breezy
+140,Sun 12/20/09 04:05 PM,Oakland Raiders,20,Denver Broncos,19,55.0, A Few Clouds
+141,Thu 08/08/13 09:00 PM,Denver Broncos,10,San Francisco 49ers,6,57.0,  Patchy Fog
+142,Thu 08/30/12 11:00 PM,Denver Broncos,16,Arizona Cardinals,13,,DOME
+143,Sun 12/29/13 04:25 PM,Denver Broncos,34,Oakland Raiders,14,71.0, A Few Clouds
+144,Sun 01/08/12 04:30 PM,Pittsburgh Steelers,23,Denver Broncos,29,39.0, A Few Clouds
+145,Mon 12/24/18 08:15 PM,Denver Broncos,14,Oakland Raiders,27,56.0, Overcast
+146,Sun 10/18/15 01:00 PM,Denver Broncos,26,Cleveland Browns,23,46.0, Mostly Cloudy
+147,Sat 01/12/13 04:30 PM,Los Angeles Chargers,17,Denver Broncos,24,41.0, Mostly Cloudy
+148,Sun 10/14/18 04:05 PM,Los Angeles Rams,23,Denver Broncos,20,24.0, Overcast
+149,Sun 11/06/16 08:30 PM,Denver Broncos,20,Oakland Raiders,30,67.0, Partly Cloudy
+150,Sun 11/22/09 04:15 PM,Los Angeles Chargers,32,Denver Broncos,3,46.0, Partly Cloudy
+151,Sun 11/25/12 01:00 PM,Denver Broncos,17,Kansas City Chiefs,9,54.0, Fair
+152,Mon 11/09/09 08:30 PM,Pittsburgh Steelers,28,Denver Broncos,10,50.0, A Few Clouds
+153,Sun 09/24/17 01:00 PM,Denver Broncos,16,Buffalo Bills,26,84.0, Clear
+154,Sun 12/31/17 04:25 PM,Kansas City Chiefs,27,Denver Broncos,24,16.0, Mostly Cloudy
+155,Sat 08/20/16 09:00 PM,San Francisco 49ers,31,Denver Broncos,24,72.0, Clear
+156,Sun 09/21/14 04:25 PM,Denver Broncos,20,Seattle Seahawks,26,83.0, Fair
+157,Sun 11/15/09 01:00 PM,Denver Broncos,17,Washington Redskins,27,67.0, Fair
+158,Sun 10/30/11 04:05 PM,Detroit Lions,45,Denver Broncos,10,59.0, A Few Clouds
+159,Sun 08/29/10 08:00 PM,Pittsburgh Steelers,17,Denver Broncos,34,88.0, Partly Cloudy
+160,Sun 10/03/10 01:00 PM,Denver Broncos,26,Tennessee Titans,20,53.0, Overcast
+161,Thu 11/17/11 08:20 PM,New York Jets,13,Denver Broncos,17,48.0, Partly Cloudy
+162,Sun 11/29/15 08:30 PM,New England Patriots,24,Denver Broncos,30,21.0, Light Snow
+163,Sun 10/30/16 04:05 PM,Los Angeles Chargers,19,Denver Broncos,27,75.0, Mostly Cloudy
+164,Mon 12/22/14 08:30 PM,Denver Broncos,28,Cincinnati Bengals,37,46.0, Partly Cloudy
+165,Sun 10/27/13 04:25 PM,Washington Redskins,21,Denver Broncos,45,68.0, Partly Cloudy
+166,Sun 09/29/13 04:25 PM,Philadelphia Eagles,20,Denver Broncos,52,73.0, Mostly Cloudy
+167,Sun 10/15/17 08:30 PM,New York Giants,23,Denver Broncos,10,53.0, Clear
+168,Sun 09/07/14 08:30 PM,Indianapolis Colts,24,Denver Broncos,31,70.0, Partly Cloudy
+169,Sun 12/16/12 01:00 PM,Denver Broncos,34,Baltimore Ravens,17,64.0,  Light Rain
+170,Sun 09/15/13 04:25 PM,Denver Broncos,41,New York Giants,23,67.0, Fair
+171,Sun 11/12/17 08:30 PM,New England Patriots,41,Denver Broncos,16,48.0, Clear
+172,Mon 10/15/12 08:30 PM,Denver Broncos,35,Los Angeles Chargers,24,70.0, Clear
+173,Sat 02/02/13 06:30 PM,Seattle Seahawks,43,Denver Broncos,8,49.0, Mostly Cloudy
+174,Sun 09/13/15 04:25 PM,Baltimore Ravens,13,Denver Broncos,19,86.0, Partly Cloudy
+175,Sun 11/01/15 08:30 PM,Green Bay Packers,10,Denver Broncos,29,52.0, Partly Cloudy
+176,Thu 09/17/15 08:25 PM,Denver Broncos,31,Kansas City Chiefs,24,80.0, Mostly Cloudy
+177,Sun 12/04/16 01:00 PM,Denver Broncos,20,Jacksonville Jaguars,10,75.0, Partly Cloudy
+178,Thu 08/11/11 08:30 PM,Denver Broncos,23,Dallas Cowboys,24,95.0, Clear
+179,Sun 12/08/13 04:05 PM,Tennessee Titans,28,Denver Broncos,51,19.0, A Few Clouds with Haze
+180,Thu 10/18/18 08:20 PM,Denver Broncos,45,Arizona Cardinals,10,,DOME
+181,Sun 12/04/11 01:00 PM,Denver Broncos,35,Minnesota Vikings,32,,DOME
+182,Sun 11/26/17 04:25 PM,Denver Broncos,14,Oakland Raiders,21,61.0, Partly Cloudy
+183,Thu 12/06/12 08:20 PM,Denver Broncos,26,Oakland Raiders,13,57.0, Mostly Cloudy
+184,Sun 09/13/09 01:00 PM,Denver Broncos,12,Cincinnati Bengals,7,71.0, Fair
+185,Thu 09/01/11 10:00 PM,Denver Broncos,7,Arizona Cardinals,26,,DOME
+186,Thu 09/03/15 09:00 PM,Arizona Cardinals,22,Denver Broncos,20,63.0, Partly Cloudy
+187,Sun 09/23/18 01:00 PM,Denver Broncos,14,Baltimore Ravens,27,62.0, Light Rain
+188,Sun 09/30/12 04:05 PM,Oakland Raiders,6,Denver Broncos,37,73.0, Mostly Cloudy
+189,Mon 09/11/17 10:20 PM,Los Angeles Chargers,21,Denver Broncos,24,73.0, Partly Cloudy
+190,Sun 02/07/16 06:30 PM,Carolina Panthers,10,Denver Broncos,24,71.0, Clear
+191,Sun 10/09/11 04:15 PM,Los Angeles Chargers,29,Denver Broncos,24,54.0, Mostly Cloudy
+192,Sun 12/13/09 01:00 PM,Denver Broncos,16,Indianapolis Colts,28,,DOME
+193,Sun 09/14/14 04:25 PM,Kansas City Chiefs,17,Denver Broncos,24,82.0,   Showers in Vicinity
+194,Mon 10/01/18 08:15 PM,Kansas City Chiefs,27,Denver Broncos,23,65.0, Mostly Cloudy
+195,Sun 11/04/18 04:05 PM,Houston Texans,19,Denver Broncos,17,53.0, Mostly Cloudy
+196,Thu 10/13/16 08:25 PM,Denver Broncos,13,Los Angeles Chargers,21,69.0, Clear
+197,Sun 11/15/15 04:25 PM,Kansas City Chiefs,29,Denver Broncos,13,59.0, Partly Cloudy
+198,Thu 08/29/13 09:00 PM,Arizona Cardinals,32,Denver Broncos,24,81.0, Mostly Cloudy
+199,Sun 12/05/10 01:00 PM,Denver Broncos,6,Kansas City Chiefs,10,26.0, Fair
+200,Mon 09/23/13 08:30 PM,Oakland Raiders,21,Denver Broncos,37,57.0, Partly Cloudy
+201,Sun 01/11/15 04:40 PM,Indianapolis Colts,24,Denver Broncos,13,37.0, Overcast
+202,Sun 12/02/12 04:05 PM,Tampa Bay Buccaneers,23,Denver Broncos,31,63.0, Mostly Cloudy
+203,Fri 08/14/09 10:00 PM,Denver Broncos,16,San Francisco 49ers,17,63.0, A Few Clouds
+204,Sun 11/10/13 04:25 PM,Denver Broncos,28,Los Angeles Chargers,20,77.0, NA
+205,Sat 12/15/18 04:30 PM,Cleveland Browns,17,Denver Broncos,16,54.0, Partly Cloudy
+206,Sun 12/12/10 04:15 PM,Denver Broncos,13,Arizona Cardinals,43,,DOME
+207,Sun 09/12/10 01:00 PM,Denver Broncos,17,Jacksonville Jaguars,24,91.0, Partly Cloudy
+208,Mon 10/30/17 08:30 PM,Denver Broncos,19,Kansas City Chiefs,29,41.0, Clear
+209,Sat 08/18/18 09:05 PM,Chicago Bears,24,Denver Broncos,23,74.0, Partly Cloudy

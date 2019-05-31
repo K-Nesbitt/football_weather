@@ -1,50 +1,17 @@
 #%%
-from bs4 import BeautifulSoup
-import requests
-import pandas as pd 
-import numpy as np 
 from scipy import stats
+import numpy as np 
+import pandas as pd
 import matplotlib.pyplot as plt
 
 plt.style.use('seaborn-darkgrid')
-
-#%%
-# This is my actual web scraping code. The function takes the BeautifulSoup object
-# that was created from an HTML file and returns the information of the data frame
-# for that team.
-# This code will find each piece of data, strip away the excess text, 
-# and join all pieces together in a tuple. The tuples are then added to a set 
-# to eliminate the duplicate games (which I saw on the website).
-def web_scrape(soup_object):
-    team_data = soup_object.findAll(class_= 'span3 wbkg')
-    table_set = set()
-    for i in range(len(team_data)):
-        date = soup_object.findAll('div', {'class':'gt-header'})[i].text.strip().split('\n')[0]
-        away_team = soup_object.findAll('div', {'class':'gt-away'})[i].text.strip().split('\n')[0]
-        away_team_score = soup_object.findAll('div', {'class':'gt-away'})[i].text.strip().split('\n')[1]
-        home_team = soup_object.findAll('div', {'class':'gt-home'})[i].text.strip().split('\n')[0]
-        home_team_score = soup_object.findAll('div', {'class':'gt-home'})[i].text.strip().split('\n')[1]
-        weather = soup_object.findAll('div', {'class':'gt-weather'})[i].text.strip().split('f')[0]
-        if weather == 'DOME':
-            weather_temp = np.NaN
-            weather_type = 'DOME'
-        else:
-            weather_temp = int(float(weather)) if '/' not in weather else np.NaN 
-            # There was one game that the weather was recorded as 33/51. Since I could not 
-            #definitively determine the weather and it was only one game with this record,
-            #I decided to record the temp as NaN for that game. 
-            weather_type = soup_object.findAll('div', {'class':'gt-weather'})[i].text.strip().split('f')[1]
-        game_row = (date, away_team, away_team_score, home_team, home_team_score, weather_temp, weather_type)
-        table_set.add(game_row)
-    table_list = list(table_set)
-    game_df = pd.DataFrame(table_list, columns = ('Date', 'Away_Team', 'Away_Team_Score', 'Home_Team', 'Home_Team_Score', 'Weather_Temp', 'Weather_Type'))
-    return game_df
 
 #%%
 #The data from the website does not list the winner of the game
 #so I will create a new column that denotes if the given team was the winner. 
 #I set the values to 1 and 0 instead of True or False to make it easier for graphing.
 def win_column(df, team_name):
+    df['Win']= 0
     for i in range(len(df)):
         if df['Away_Team'][i] == team_name and df['Away_Team_Score'][i] > df['Home_Team_Score'][i]:
             df.at[i,'Win']= 1
@@ -52,14 +19,14 @@ def win_column(df, team_name):
             df.at[i,'Win'] = 1
         else:
             df.at[i,'Win'] = 0
-    return df 
+    return df
 
 #%%
 #This function will calculate average temp and the number of wins
 def calculate_averages(df):
     temp_avg = round(df['Weather_Temp'].mean(skipna=True), 2)
     num_wins_rate = round((df['Win'].sum()/ len(df)), 2)
-    print('The average temperature of games from 2009 - 2018 is: ' + str(temp_avg)+ 'degrees Farenheit\n'
+    print('The average temperature of games from 2009 - 2018 is: ' + str(temp_avg)+ ' degrees Farenheit\n'
     'The average number of wins from 2009 - 2018 is: ' + str(num_wins_rate) + '\n')
     return temp_avg, num_wins_rate
 
@@ -122,38 +89,33 @@ def hist_win_loss(df, filename):
     return fig, axs
 
 #%%
-#This will create a dataframe where the temperature 
-# is less than or greater than the average
-def l_or_g(df, calculation):
+#This will create two dataframes where the temperature 
+# is less than or greater than the average. Take a sample of those 
+#dataframes, and then run a test on the samples to determine if 
+#their mean values are significantly different. Some default values were established
+#but they were included in the definition for future ability to change.
+
+def below_above_ttest(df, column_name='Win'):
     temp_avg = round(df['Weather_Temp'].mean(skipna=True), 0)
-    if calculation == 'less':
-        return df[df['Weather_Temp']< temp_avg]
-        
-    else:
-        return df[df['Weather_Temp'] > temp_avg]
-        
+    below = df[df['Weather_Temp']< temp_avg]
+    above = df[df['Weather_Temp'] > temp_avg]
+    
+    stat, pval = stats.ttest_ind(below[column_name], above[column_name], equal_var=False)
+    print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
 
-#Create samples from dataframes to run stat test on
-less = l_or_g(game_win_df, 'less')
-sample_l = less.sample(n=50)
-
-greater = l_or_g(game_win_df, 'greater')
-sample_g = greater.sample(n=50)
 
 #%%
-#Run two tailed T-test on two independent samples. 
-# Null hypothesis is that the sample means are identical. 
-stat, pval = stats.ttest_ind(sample_l['Win'], sample_g['Win'], equal_var=False)
-print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
+#This will create two dataframes of games won and games lost. Take a sample of those 
+#dataframes, and then run a test on the samples to determine if 
+#their mean values are significantly different. Some default values were established
+#but they were included in the definition for future ability to change.
 
-#%%
-#Run two tailed T-test on two new independent samples. 
-#Null hypothesis is that the sample means are identical.
-sample_win = game_win_df[game_win_df['Win']==1].sample(n=50)
-sample_lost = game_win_df[game_win_df['Win']!=1].sample(n=50)
+def win_loss_ttest(df, n=50, column_name='Weather_Temp'):
+    win = df[df['Win']==1]
+    lost = df[df['Win']!=1]
 
-stat, pval = stats.ttest_ind(sample_win['Weather_Temp'], sample_lost['Weather_Temp'], equal_var=False, nan_policy='omit')
-print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
+    stat, pval = stats.ttest_ind(win[column_name], lost[column_name], equal_var=False, nan_policy='omit')
+    print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
 
 
 #%%
@@ -167,59 +129,36 @@ def team_scores(df, team_name):
         new_df.at[i,'Score'] = df['Away_Team_Score'][i] if df['Away_Team'][i] == team_name else df['Home_Team_Score'][i]
         new_df.at[i, 'Weather_Temp'] = df['Weather_Temp'][i]
     return new_df
-t_score = team_scores(game_win_df, 'Denver Broncos')
-
-
 
 
 #%%
-temp_low_score = l_or_g(t_score, 'less')
-temp_high_score = l_or_g(t_score, 'more')
-temp_high_score
-#%%
-samp_l_score = temp_low_score.sample(n=50)
-samp_g_score = temp_high_score.sample(n=50)
+#This function will return the average score of all games,
+# games below average temperature, and games above average temperature
 
-#%%
-#Ttest on two samples of low and high temperatures to see if their is a difference
-#in the mean value of their scores
-stat, pval = stats.ttest_ind(pd.to_numeric(samp_g_score['Score']), pd.to_numeric(samp_l_score['Score']), equal_var=False)
-print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
-
-#%%
-#Average score of games with temperature below average:
-temp_low_score['Score'] = pd.to_numeric(temp_low_score['Score'])
-temp_low_score['Score'].mean()
-#%%
-#Average score of games with temperature above average:
-temp_high_score['Score'] = pd.to_numeric(temp_high_score['Score'])
-temp_high_score['Score'].mean()
-
-#%%
-#Average score of all games
-t_score['Score'] = pd.to_numeric(t_score['Score'])
-t_score['Score'].mean()
+def score_averages(df):
+    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 0)
+    below = df[df['Weather_Temp']< temp_avg]
+    above = df[df['Weather_Temp'] > temp_avg]
+    mean, below_mean, above_mean = round(df['Score'].mean(), 2), round(below['Score'].mean(),2), round(above['Score'].mean(),2)
+   
+    print('The average score of all games is '+ str(mean)+ '\n')
+    print('The average score of games below average temperature is '+ str(below_mean)+ '\n')
+    print('The average score of games above average temperature is ' + str(above_mean))
 
 
 #%%
-type(samp_g_score['Score'][0])
-#%%
-stat, pval = stats.ttest_ind(samp_g_score['Score'],samp_l_score['Score'], equal_var=False)
-print('The statistic value is {} and the pvalue is {}'.format(round(stat, 3), round(pval, 3)))
-
-
-#%%
-type(temp_low_score['Weather_Temp'])
-
-#%%
-ax = plt.subplot()
-ax.plot(temp_low_score['Weather_Temp'], temp_low_score['Score'], 'ro')
-ax.set_title('Temperature vs. Score')
-ax.set_xlabel('Temperature of Game')
-ax.set_ylabel('Game Score')
-ax.plot(temp_low_score['Weather_Temp'], temp_low_score['Score'], 'bo')
-ax.plot(temp_high_score['Weather_Temp'], temp_high_score['Score'], 'ro')
-ax.axhline(t_score['Score'].mean(), color='yellow',  linewidth=4)
-ax.annotate('Average Score', xy=(90,24))
-plt.savefig('images/temp_vs_score', facecolor = 'white')
+#This function will create a plot of score values by temperature. 
+def plot_temp_score(df, filename):
+    temp_avg = round(df['Weather_Temp'].mean(skipna=True), 0)
+    below = df[df['Weather_Temp']< temp_avg]
+    above = df[df['Weather_Temp'] > temp_avg]
+    ax = plt.subplot()
+    ax.set_title('Temperature vs. Score')
+    ax.set_xlabel('Temperature of Game')
+    ax.set_ylabel('Game Score')
+    ax.plot(below['Weather_Temp'], below['Score'], 'bo')
+    ax.plot(above['Weather_Temp'], above['Score'], 'ro')
+    ax.axhline(df['Score'].mean(), color='yellow',  linewidth=4)
+    ax.annotate('Average Score', xy=(90,24))
+    plt.savefig('images/{}'.format(filename), facecolor = 'white')
 #%%
