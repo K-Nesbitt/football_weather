@@ -26,8 +26,8 @@ I looked into these games specifically to see if there were any other trends (da
 ## Statistical Test Elements:
 1. Null Hypothesis: The sample means (winning rate) are identical
 2. Alternative Hypothesis: The sample means are not identical
-3. The statistical test I will use is a Bonferroni Test. A Bonferroni is a type of T-test that compares n samples.
-4. Since there are two samples that I am comparing, alpha  = 0.05/2 = 0.025.
+3. The statistical test I will use is a T-test to compare the samples. 
+4. Since there are two samples that I am comparing, I will use the Bonferroni correction to my alpha value and set it equal to 0.025.
 
 ## Results
 I ran a T-test on two samples of data; games that were below average temperature, and games that were above average temperature. 
@@ -50,15 +50,15 @@ I then ran the same test on the entire population and received these results:
      
 I was apprehensive of this value since it was drastically different than my sample results. 
 
-Out of curiosity and further wanting to check my hypothesis, I decided to run another T-test on two different samples. This time I created a sample of games won and of games lost. I then ran the T-Test against the weather of theses two samples. 
+Out of curiosity and further wanting to check my hypothesis, I decided to run another T-test on two different samples. This time I created a sample of games won and of games lost. I then ran the T-Test against the weather of theses two samples with 50 games.  
 
        The statistic value is -0.386 and the pvalue is 0.7
 
-I then ran the same test against the entire population and not just a sample. These were the results:
+I then ran the same test against the entire population and these were the results:
 
       The statistic value is 2.203 and the pvalue is 0.029
       
-The first p-value would lead me to reject the Null Hypothesis since it is less than my significance level. However, the second p-value is slightly higher than the significance level so I have failed to reject the Null Hypothesis. I assume that the first p-value is in the Type 1 error range and am rejecting even though it is True. 
+The first p-value would lead me to reject the Null Hypothesis since it is more extreme than my significance level. However, the second p-value is slightly higher than the significance level so I have failed to reject the Null Hypothesis. I assume that the first p-value is in the Type 1 error range and am rejecting the Null Hypothesis even though it is true. 
 
 
 The second hypothesis that I wanted to test was if there was a significant difference in the scores for low or high temperatures. To run this test I had to create a dataframe that had the date, score (specifically Denver), and the temperature. When I tested a sample of 50, I received these results:
@@ -74,10 +74,10 @@ The second hypothesis that I wanted to test was if there was a significant diffe
 I am still unable to reject the Null Hypothesis. The average score for all games is 23.44 points, for games that are      below 62 degrees the average score is 22.04 points, and games that are above 62 degrees the average score is 24.78 points. 
 
 ## Round 2: Miami Dolphins
-I decided to look at a team who had a higher temperature average for home games. 
+I decided to look at a team who had a higher and more consistent temperature average for home games. 
 ![weather graph2](https://github.com/K-Nesbitt/football_weather/blob/master/images/Miami%20Weather%20Map.png)
 
-The dolphins clearly have a higher average temperture for their home games. So does weather affect their score values?
+Miami has an average temperature of 83 degrees from August to December so it may be assumed that the Dolphins would perform worst in lower temperatures. 
 
 ![hist3](https://github.com/K-Nesbitt/football_weather/blob/master/images/dolphins_temp_hist.png)
 ![hist4](https://github.com/K-Nesbitt/football_weather/blob/master/images/dolphins_win_loss.png)
@@ -97,9 +97,9 @@ Therefore, I cannot reject the null hypothesis for the Miami Dolphins either.
 
       
 ## Reflection
-Even though I was unable to reject the null hypothesis that weather has no affect on the mean score, or chance of winning, I still enjoyed the research and skill building that this project entailed. I was able to build a web scraping program, create main functions, and then call those functions for both teams with little duplication of code. I was also able to make quality visualizations of my results. 
+Even though I was unable to reject the null hypothesis that weather has no affect on the mean score, or chance of winning, I still enjoyed the research and skill building that this project entailed. I was able to build a web scraping program using Beautiful Soup and Python, create main functions to use on both teams with little duplication of code. I was also able to make quality visualizations of my results using the Matplotlib library.
 
-For further study I would like consider other factor such as: type of weather, playoffs, and quarterback performance by season.
+For further study I would like consider other factor such as: type of weather, home game bias, playoffs, and quarterback performance by season.
 
 ## References
 1. NFLWeather.com, http://www.nflweather.com/en/
